@@ -8,8 +8,31 @@ namespace PolterSteffen
     public class Aufgabe_1
     {
 
-// ########################################### AUFGABE ####################################################################
-
+        // ########################################### AUFGABE ####################################################################
+        /// <summary>        /// 
+        /// Schreibe eine Funktion, die eine Reihe von Zeichenketten annimmt und die eindeutige Folge von Abürzungen zurückgibt.
+        ///        Die Funktion soll primär die Länge der Abkürzungen ausgeben, sekundär die Abürzungen als Array.
+        ///
+        ///        Wie viele Buchstaben sind mindestens nötig um die Zeichenfolgen eindeutig identifizieren zu können?
+        ///
+        ///        Beispiel 1:
+        ///Eingabe: ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"]
+        ///        Ausgabe: 2, ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"]
+        ///
+        ///
+        ///        Beispiel 2:
+        ///Eingabe: ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "November", "Oktober", "November", "Dezember"]
+        ///        Ausgabe: 3, ["Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov" "Dez"]
+        ///
+        ///
+        ///        Beispiel 3:
+        ///Eingabe: ["Steffen", "Stefan", "Steven", "Stefanie", "Max", "Maximilian", "Hugo"]
+        ///        Ausgabe: Keine Eindeutige Identifizierung möglich
+        ///
+        /// </summary>
+        /// <param name="lst">Liste von Wörtern</param>
+        /// <returns>ein <see cref="Resultat"/> mit der Minimalen Zeichenläge und den Werten</returns>
+        /// <exception cref="Exception">Wenn keine Minimale Länge ermittelt werden kann.</exception>
         public Resultat SuchAbkürzung(IEnumerable<string> lst)
         {
             // TODO Implementieren
@@ -41,7 +64,7 @@ namespace PolterSteffen
 
 
 
-// ########################################### TESTS ####################################################################
+        // ########################################### TESTS ####################################################################
 
         [Fact]
         public void Wochentage()
